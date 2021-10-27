@@ -64,9 +64,12 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
         else if (v1.value != '' && v2.value != '' && t.value != ''){
             answer = dGivenV1V2T(v1.value, v2.value, t.value)
         }
+    // final velocity functions
     } else if (v2 == null){
+        // given v1, t, a
         if (v1.value != '' && t.value != '' && a.value != ''){
             answer = v2GivenV1TA(v1.value, t.value, a.value)
+        // given v1, a, d
         } else if (v1.value != '' && a.value != '' && d.value != ''){
             answer = v2GivenV1AD(v1.value, a.value, d.value)
         }

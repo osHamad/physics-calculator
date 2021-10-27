@@ -32,18 +32,18 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // check which function to use
     // given v1, t, a
     if (v2 === ''){
-        answer = dGivenV1TA(v1.value, t.value, a.value)
+        answer = dGivenV1TA(v1, t, a)
     }
     // given v2, t, a
     else if (v1 === ''){
-        answer = dGivenV2TA(v2.value, t.value, a.value)
+        answer = dGivenV2TA(v2, t, a)
     }
     // given v1, v2, t
     else if (a === ''){
-        answer = dGivenV1V2T(v1.value, v2.value, t.value)
+        answer = dGivenV1V2T(v1, v2, t)
     }
     // given v1, v2, a
     else if (a === ''){
-        answer = dGivenV1V2A(v1.value, v2.value, t.value)
+        answer = dGivenV1V2A(v1, v2, t)
     }
 })

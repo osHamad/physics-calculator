@@ -14,6 +14,11 @@ function dGivenV1V2T(v1, v2, t){
     return ((v1 + v2) / 2) * t
 }
 
+// displacement given initial velocity, final velocity and acceleration
+function dGivenV1V2A(v1, v2, a){
+    return (v2 ** 2 - v1 ** 2) / (2 * a)
+}
+
 // function needs optomization
 document.getElementById('calculate-button').addEventListener('click', ()=>{
     // store all variables
@@ -36,5 +41,9 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // given v1, v2, t
     else if (a === ''){
         answer = dGivenV1V2T(v1.value, v2.value, t.value)
+    }
+    // given v1, v2, a
+    else if (a === ''){
+        answer = dGivenV1V2A(v1.value, v2.value, t.value)
     }
 })

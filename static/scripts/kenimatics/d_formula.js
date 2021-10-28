@@ -28,22 +28,27 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     const a = document.getElementById('acceleration-input').value
 
     let answer
+    let image
     
     // check which function to use
     // given v1, t, a
-    if (v2 === ''){
+    if (v1 != '' && t != '' && a != ''){
         answer = dGivenV1TA(v1, t, a)
     }
     // given v2, t, a
-    else if (v1 === ''){
+    else if (v2 != '' && t != '' && a != ''){
         answer = dGivenV2TA(v2, t, a)
     }
     // given v1, v2, t
-    else if (a === ''){
+    else if (v1 != '' && v2 != '' && t != ''){
         answer = dGivenV1V2T(v1, v2, t)
     }
     // given v1, v2, a
-    else if (a === ''){
+    else if (v1 != '' && v2 != '' && t != ''){
         answer = dGivenV1V2A(v1, v2, t)
     }
+    else {
+        answer = 'There was a problem with your input'
+    }
+    document.getElementById('answer').innerText = 'ANSWER: ' + answer + 'm'
 })

@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/styles/nav_bar_styles.css">
     <link rel="stylesheet" href="/static/styles/global_uniform.css">
-    <title>Physics Calculator</title>
+    <link rel="stylesheet" href="/static/styles/nav_bar_styles.css">
+    <title>Kenimatics</title>
 </head>
 <body>
     <ul>
@@ -15,10 +15,16 @@
         <li><a href="/units/dynamics" class="nav-items">Dynamics</a></li>
         <li style="float:right"><a class="nav-items" href="#">GitHub</a></li>
     </ul>
-    
-    <p>Welcome to the physics calculator</p>
-    <button id="kenimatics-button" name="kenimatics">Kenimatics</button>
-    <button id="dynamics-button" name="dynamics">Dynamics</button>
+    <div id="page-title">
+        <p>Kenimatics</p> 
+    </div>
+    <div id="unit-select-button">
+        <button id="velocity-2-button">Final Velocity</button>
+        <button id="velocity-1-button">Initial Velocity</button>
+        <button id="time-button">Time</button>
+        <button id="displacement">Displacement</button>
+        <button id="acceleration">Acceleration</button>
+    </div>
 </body>
-<script src="/static/scripts/unit_buttons.js"></script>
+<script src="/static/scripts/kenimatics/kenimatics_buttons.js"></script>
 </html>

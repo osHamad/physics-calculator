@@ -4,11 +4,11 @@ const path = require('path')
 
 
 router.get('/kenimatics', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/units/kenimatics/index.html'))
+    res.render('units/kenimatics/index.ejs')
 })
 
 router.get('/dynamics', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/units/dynamics/index.html'))
+    res.render('units/dynamics/index.ejs')
 })
 
 

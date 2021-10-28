@@ -5,8 +5,25 @@
     padding: 0;
     outline: 0;
     font-size: 100%;
+    color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 body {
     background-color: rgb(70, 70, 70);
+}
+#unit-select-button button {
+    background-color: rgb(151, 151, 151);
+    border-radius: 2px;
+    padding: 50px;
+    margin: 20px;
+    font-size: 25px;
+}
+
+#unit-select-button button:hover{
+    background-color: #111; 
+}
+
+#page-title p {
+    margin: 20px;
+    font-size: 50px;
 }

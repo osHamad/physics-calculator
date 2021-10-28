@@ -7,20 +7,18 @@ ul {
 }
   
 li {
-float: left;
+    float: left;
 }
 
 li .nav-items {
-display: block;
-color: white;
-text-align: center;
-padding: 22px 20px;
-text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 22px 20px;
+    text-decoration: none;
 }
 
 li #page-title-nav {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -29,5 +27,5 @@ li #page-title-nav {
 
 /* Change the link color to #111 (black) on hover */
 li .nav-items:hover {
-background-color: #111;
+    background-color: #111;
 }

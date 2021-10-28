@@ -4,23 +4,23 @@ const path = require('path')
 
 
 router.get('/acceleration', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/units/kenimatics/acceleration.html'))
+    res.render('units/kenimatics/acceleration.ejs')
 })
 
 router.get('/initial_velocity', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/units/kenimatics/velocity1.html'))
+    res.render('units/kenimatics/velocity1.ejs')
 })
 
 router.get('/final_velocity', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/units/kenimatics/velocity2.html'))
+    res.render('units/kenimatics/velocity2.ejs')
 })
 
 router.get('/displacement', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/units/kenimatics/displacement.html'))
+    res.render('units/kenimatics/displacement.ejs')
 })
 
 router.get('/time', (req, res) => {
-    res.sendFile(path.join(__dirname, '../views/units/kenimatics/time.html'))
+    res.render('units/kenimatics/time.ejs')
 })
 
 module.exports = router

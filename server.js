@@ -3,10 +3,11 @@ const app = express()
 const unitRouter = require('./routes/unit_selection')
 const kenimaticsRouter = require('./routes/kenimatics_selection')
 
+app.set('view engine', 'ejs')
 app.use("/static", express.static('./static/'))
 
 app.get('/', (req, res)=>{
-    res.sendFile(__dirname+'/views/index.html')
+    res.render('index.ejs')
 })
 
 app.use('/units', unitRouter)

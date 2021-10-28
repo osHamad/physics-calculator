@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/nav_bar_styles.css">
+    <link rel="stylesheet" href="/static/styles/global_uniform.css">
     <title>Final Velocity</title>
 </head>
 <body>
-    <h1>Final Velocity</h1>
+    <%- include('../../nav_bar.ejs') %>
+    <div id="page-title">
+        <p>Final Velocity</p>
+    </div>
     <input type="text" placeholder="Initial Velocity" id="velocity1-input"><br>
     <input type="text" placeholder="Time" id="time-input"><br>
     <input type="text" placeholder="Acceleration" id="acceleration-input"><br>

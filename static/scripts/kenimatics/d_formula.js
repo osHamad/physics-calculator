@@ -11,7 +11,7 @@ function dGivenV2TA(v2, t, a){
 
 // displacement given initial velocity, final velocity and time
 function dGivenV1V2T(v1, v2, t){
-    return ((v1 + v2) / 2) * t
+    return (v1/2 + v2/2) * t
 }
 
 // displacement given initial velocity, final velocity and acceleration
@@ -53,6 +53,7 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     }
     else {
         answer = 'There was a problem with your input'
+        image.src = ''
     }
     document.getElementById('answer').innerText = 'ANSWER: ' + answer
 })

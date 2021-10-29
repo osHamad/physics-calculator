@@ -81,4 +81,5 @@ body {
     float: right;
     display: inline;
     margin: 20px 200px;
+    filter: invert(1);
 }

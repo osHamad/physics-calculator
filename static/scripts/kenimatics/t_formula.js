@@ -18,14 +18,22 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     const a = document.getElementById('acceleration-input').value
 
     let answer
+    let image = document.getElementById('formula-img')
     
     // check which function to use
-    // given v1, v2, t
-    if (a === ''){
-        answer = dGivenV1V2D(v1, v2, d)
+    // given v1, v2, a
+    if (v1 != '' && v2 != '' && a != ''){
+        answer = dGivenV1V2A(v1, v2, a) + 's'
+        image.src = ''
     }
-    else if (d === ''){
-        answer = tGivenV1V2D(v1, v2, a)
+    // given v1, v2, d
+    else if (v1 != '' && v2 != '' && d != ''){
+        answer = tGivenV1V2D(v1, v2, d) + 's'
+        image.src = ''
     }
-    
+    else {
+        answer = 'There was a problem with your input'
+        image.src = ''
+    }
+    document.getElementById('answer').innerText = 'ANSWER: ' + answer
 })

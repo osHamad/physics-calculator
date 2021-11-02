@@ -5,7 +5,7 @@ function tGivenV1V2D(v1, v2, d){
 }
 
 // time given v1, v2, a
-function tGivenV1V2D(v1, v2, a){
+function tGivenV1V2A(v1, v2, a){
     return (v2 - v1) / a
 }
 
@@ -23,7 +23,7 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // check which function to use
     // given v1, v2, a
     if (v1 != '' && v2 != '' && a != ''){
-        answer = dGivenV1V2A(v1, v2, a) + 's'
+        answer = tGivenV1V2A(v1, v2, a) + 's'
         image.src = ''
     }
     // given v1, v2, d

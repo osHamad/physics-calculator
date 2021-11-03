@@ -9,13 +9,12 @@ function tGivenV1V2A(v1, v2, a){
     return (v2 - v1) / a
 }
 
-// function needs optomization
 document.getElementById('calculate-button').addEventListener('click', ()=>{
     // store all variables
     const v1 = document.getElementById('velocity1-input').value
     const v2 = document.getElementById('velocity2-input').value
-    const d = document.getElementById('displacement-input').value
     const a = document.getElementById('acceleration-input').value
+    const d = document.getElementById('displacement-input').value
 
     let answer
     let image = document.getElementById('formula-img')

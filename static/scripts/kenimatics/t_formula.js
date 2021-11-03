@@ -24,12 +24,12 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // given v1, v2, a
     if (v1 != '' && v2 != '' && a != ''){
         answer = tGivenV1V2A(v1, v2, a) + 's'
-        image.src = ''
+        image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7B%5CDelta%20t%7D%3D%5Cfrac%7B%5Cvec%7Bv_2%7D-%5Cvec%7Bv_1%7D%7D%7B%5Cvec%7Ba%7D%7D'
     }
     // given v1, v2, d
     else if (v1 != '' && v2 != '' && d != ''){
         answer = tGivenV1V2D(v1, v2, d) + 's'
-        image.src = ''
+        image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7B%5CDelta%20t%7D%3D%5Cfrac%7B2%5Cvec%7B%5CDelta%20d%7D%7D%7B%5Cvec%7Bv_1%7D%2B%5Cvec%7Bv_2%7D%7D'
     }
     else {
         answer = 'There was a problem with your input'

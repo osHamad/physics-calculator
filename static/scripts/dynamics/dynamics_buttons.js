@@ -18,7 +18,7 @@ document.getElementById('force-friction-button').addEventListener('click', ()=>{
     getUnitPage('force_friction')
 })
 
-document.getElementById('friction-coeffecient-button').addEventListener('click', ()=>{
+document.getElementById('friction-coefficient-button').addEventListener('click', ()=>{
     getUnitPage('friction_coefficient')
 })
 
@@ -30,11 +30,11 @@ document.getElementById('radius-button').addEventListener('click', ()=>{
     getUnitPage('radius')
 })
 
-document.getElementById('mass-1').addEventListener('click', ()=>{
+document.getElementById('mass-1-button').addEventListener('click', ()=>{
     getUnitPage('mass_one')
 })
 
-document.getElementById('mass-2').addEventListener('click', ()=>{
+document.getElementById('mass-2-button').addEventListener('click', ()=>{
     getUnitPage('mass_two')
 })
 

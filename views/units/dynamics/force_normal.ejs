@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/static/styles/nav_bar_styles.css">
     <link rel="stylesheet" href="/static/styles/global_uniform.css">
-    <title>Mass</title>
+    <title>Force Normal</title>
 </head>
 <body>
     <%- include('../../nav_bar.ejs') %>
     <div id="page-title">
-        <p>Mass</p> 
+        <p>Force Normal</p> 
     </div>
     <img id="formula-img" src="">
     <div id="variable-inputs">
-        <input type="text" placeholder="Force" id="force-input"><br>
-        <input type="text" placeholder="Acceleration" id="acceleration-input"><br>
+        <input type="text" placeholder="Force Friction" id="forcef-input"><br>
+        <input type="text" placeholder="Friction Coefficient" id="frictionc-input"><br>
         <button id="calculate-button">Calculate</button>
     </div>
     <div id="answer-container">
         <p id="answer">ANSWER: </p>
     </div>
 </body>
-<script src="../../static/scripts/dynamics/m_formula.js"></script>
+<script src="../../static/scripts/dynamics/fn_formula.js"></script>
 </html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles/nav_bar_styles.css">
+    <link rel="stylesheet" href="/static/styles/global_uniform.css">
+    <title>Force Normal</title>
+</head>
+<body>
+    <%- include('../../nav_bar.ejs') %>
+    <div id="page-title">
+        <p>Force Normal</p> 
+    </div>
+    <img id="formula-img" src="">
+    <div id="variable-inputs">
+        <input type="text" placeholder="Force Friction" id="forcef-input"><br>
+        <input type="text" placeholder="Friction Coefficient" id="frictionc-input"><br>
+        <button id="calculate-button">Calculate</button>
+    </div>
+    <div id="answer-container">
+        <p id="answer">ANSWER: </p>
+    </div>
+</body>
+<script src="../../static/scripts/dynamics/fn_formula.js"></script>
+</html>

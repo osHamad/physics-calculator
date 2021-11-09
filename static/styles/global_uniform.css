@@ -13,77 +13,9 @@ body {
     background-color: rgb(70, 70, 70);
 }
 
-#unit-select-button button {
-    background-color: rgb(151, 151, 151);
-    border-radius: 2px;
-    padding: 50px;
-    margin: 20px;
-    font-size: 25px;
-    transition: 0.3s;
-}
-
-#unit-select-button button:hover{
-    background-color: #111;
-}
-
 #page-title p {
     margin: 20px;
     font-size: 50px;
-}
-
-
-#variable-inputs {
-    display: inline;
-    width: 40%;
-}
-
-#variable-inputs input, #variable-inputs button {
-    margin: 20px;
-    padding: 10px;
-    border-radius: 3px;
-    width: 25%;
-}
-
-#variable-inputs input {
-    background-color: rgb(151, 151, 151);
-}
-
-#variable-inputs button {
-    background-color: rgb(36, 36, 36);
-    height: 70px;
-    transition: 0.2s;
-}
-
-#variable-inputs {
-    width: 50%;
-    display: inline;
-}
-
-#variable-inputs input:hover {
-    background-color: rgb(128, 128, 128);
-}
-
-#variable-inputs button:hover {
-    background-color: rgb(128, 128, 128);
-}
-
-#variable-inputs input::placeholder {
-    color: white;
-}
-
-#answer-container {
-    margin: 20px;
-    font-size: 25px;
-    width: 50%;
-    padding: 20px
-}
-
-#formula-img {
-    width: 25%;
-    float: right;
-    display: inline;
-    margin: 20px 200px;
-    filter: invert(1);
 }
 
 ::-webkit-scrollbar {

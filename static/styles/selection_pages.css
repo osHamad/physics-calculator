@@ -4,3 +4,17 @@
     font-size: 25px;
     border-bottom: 2px solid white;
 }
+
+#unit-select-button button {
+    background-color: rgb(151, 151, 151);
+    width: 25%;
+    border-radius: 15px;
+    padding: 40px;
+    margin: 20px;
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+#unit-select-button button:hover{
+    background-color: #111;
+}

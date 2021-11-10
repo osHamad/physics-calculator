@@ -13,10 +13,8 @@ app.use("/static", express.static('./static/'))
 app.get('/', (req, res)=>{
     res.render('index.ejs')
 })
-const http=require('http')
-server = http.Server(app)
 // app.use('/units', unitRouter)
 // app.use('/units/kenimatics', kenimaticsRouter)
 // app.use('/units/dynamics', dynamicsRoutes)
 
-server.listen(PORT, () => console.log(`Listening on ${ PORT }`))
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

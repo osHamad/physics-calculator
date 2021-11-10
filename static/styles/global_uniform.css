@@ -20,18 +20,17 @@ body {
 }
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 12px;
 }
 
 ::-webkit-scrollbar-track {
-    background: grey;
-    border-radius: 50rem;
+    background: rgb(70, 70, 70);
+    border-radius: 50px;
 }
 
 ::-webkit-scrollbar-thumb {
     background: black;
     border-radius: 50px;
-    border: 1px solid grey;
 }
 
 ::-webkit-scrollbar-thumb:hover {

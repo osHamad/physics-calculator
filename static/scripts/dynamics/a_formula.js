@@ -16,7 +16,7 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // check which function to use
     // given f, m
     if (f != '' && m != ''){
-        answer = aGivenFM(f, m) + 'm/s^2'
+        answer = aGivenFM(f, m) + ' m/s^2'
         image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7Ba%7D%3D%5Cvec%7B%5Cfrac%7BF%7D%7Bm%7D%7D'
     }
     else {

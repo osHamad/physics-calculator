@@ -16,7 +16,7 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // check which function to use
     // given mu, fn
     if (mu != '' && fn != ''){
-        answer = ffGivenMuFn(mu, fn) + 'N'
+        answer = ffGivenMuFn(mu, fn) + ' N'
         image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7BF_f%7D%3D%5Cmu%5Cvec%7BF_n%7D'
     }
     else {

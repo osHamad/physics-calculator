@@ -5,7 +5,7 @@
     border-bottom: 2px solid white;
 }
 
-#unit-select-button button {
+#unit-select-button button, #other-select-button button {
     background-color: rgb(151, 151, 151);
     width: 25%;
     border-radius: 15px;
@@ -15,6 +15,6 @@
     transition: 0.3s;
 }
 
-#unit-select-button button:hover{
+#unit-select-button button:hover, #other-select-button button:hover {
     background-color: #111;
 }

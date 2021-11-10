@@ -3,7 +3,7 @@ const app = express()
 const unitRouter = require('./routes/unit_selection')
 const kenimaticsRouter = require('./routes/kenimatics_selection')
 const dynamicsRoutes = require('./routes/dynamics_selection')
-const PORT = process.env.PORT || 5000
+const PORT = process.env.PORT || 8000
 
 app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')

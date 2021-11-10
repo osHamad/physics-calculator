@@ -28,26 +28,27 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
 
     let answer
     let image = document.getElementById('formula-img')
+    const unit = ' m/s'
     
     // check which function to use
     // given v2, a, t
     if (v2 != '' && a != '' && t != ''){
-        answer = v1GivenV2AT(v2, a, t) + 'm/s'
+        answer = v1GivenV2AT(v2, a, t) + unit
         image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7Bv_1%7D%3D%5Cvec%7Bv_2%7D-%5Cvec%7Ba%7D%5CDelta%20t'
     }
     // given v2, a, d
     else if (v2 != '' && a != '' && d != ''){
-        answer = v1GivenV2AD(v2, a, d) + 'm/s'
+        answer = v1GivenV2AD(v2, a, d) + unit
         image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7Bv_1%7D%3D%5Csqrt%7B-2%5Cvec%7Ba%7D%5Cvec%7B%5CDelta%20d%7D%2B%5Cvec%7Bv_2%7D%5E2%7D'
     }
     // given a, t, d
     else if (a != '' && t != '' && d != ''){
-        answer = v1GivenATD(a, t, d) + 'm/s'
+        answer = v1GivenATD(a, t, d) + unit
         image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7Bv_1%7D%3D%5Cfrac%7B2%5Cvec%7B%5CDelta%20d%7D-%5Cvec%7Ba%7D%5CDelta%20t%5E2%7D%7B2%5CDelta%20t%7D'
     }
     // given v2, t, d
     else if (v2 != '' && t != '' && d != ''){
-        answer = v1GivenV2TD(v2, t, d) + 'm/s'
+        answer = v1GivenV2TD(v2, t, d) + unit
         image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7Bv_1%7D%3D%5Cfrac%7B2%5Cvec%7B%5CDelta%20d%7D-%5CDelta%20t%5Cvec%7Bv_2%7D%7D%7B%5CDelta%20t%7D'
     }
     else {

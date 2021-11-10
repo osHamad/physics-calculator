@@ -3,7 +3,8 @@ const app = express()
 const unitRouter = require('./routes/unit_selection')
 const kenimaticsRouter = require('./routes/kenimatics_selection')
 const dynamicsRoutes = require('./routes/dynamics_selection')
-const PORT = process.env.PORT || 5000
+const toolRoutes = require('./routes/other_tools_selection')
+const PORT = process.env.PORT || 8000
 
 app.set('views', __dirname + '/views')
 app.set('view engine', 'ejs')
@@ -16,5 +17,6 @@ app.get('/', (req, res)=>{
 app.use('/units', unitRouter)
 app.use('/units/kenimatics', kenimaticsRouter)
 app.use('/units/dynamics', dynamicsRoutes)
+app.use('/units/tools', toolRoutes)
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

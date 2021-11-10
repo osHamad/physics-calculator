@@ -16,7 +16,7 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // check which function to use
     // given f, a
     if (f != '' && a != ''){
-        answer = mGivenFA(f, a) + 'kg'
+        answer = mGivenFA(f, a) + ' kg'
         image.src = 'https://equatio-api.texthelp.com/svg/m%3D%5Cfrac%7B%5Cvec%7BF%7D%7D%7B%5Cvec%7Ba%7D%7D'
     }
     else {

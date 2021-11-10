@@ -16,7 +16,7 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // check which function to use
     // given m, a
     if (m != '' && a != ''){
-        answer = fGivenMA(m, a) + 'N'
+        answer = fGivenMA(m, a) + ' N'
         image.src = 'https://equatio-api.texthelp.com/svg/%5Cvec%7BF%7D%3Dm%5Cvec%7Ba%7D'
     }
     else {

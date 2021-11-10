@@ -13,8 +13,8 @@ app.use("/static", express.static('./static/'))
 app.get('/', (req, res)=>{
     res.render('index.ejs')
 })
-// app.use('/units', unitRouter)
-// app.use('/units/kenimatics', kenimaticsRouter)
-// app.use('/units/dynamics', dynamicsRoutes)
+app.use('/units', unitRouter)
+app.use('/units/kenimatics', kenimaticsRouter)
+app.use('/units/dynamics', dynamicsRoutes)
 
 app.listen(PORT, () => console.log(`Listening on ${ PORT }`))

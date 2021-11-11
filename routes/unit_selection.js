@@ -10,5 +10,8 @@ router.get('/dynamics', (req, res) => {
     res.render('units/dynamics/index.ejs')
 })
 
+router.get('/unit_conversion', (req, res) => {
+    res.render('units/conversion/index.ejs')
+})
 
 module.exports = router

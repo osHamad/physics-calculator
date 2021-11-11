@@ -47,3 +47,17 @@
     margin: 20px 200px;
     filter: invert(1);
 }
+
+#conversion-units-1, #conversion-units-2 {
+    background-color: black;
+    margin: 20px;
+    margin-bottom: 100px;
+    padding: 15px;
+    border-radius: 3px;
+}
+
+.to-label {
+    margin: 20px;
+    display: inline;
+    font-size: 20px;
+}

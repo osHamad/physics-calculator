@@ -10,6 +10,10 @@ router.get('/dynamics', (req, res) => {
     res.render('units/dynamics/index.ejs')
 })
 
+router.get('/energy', (req, res) => {
+    res.render('units/energy/index.ejs')
+})
+
 router.get('/unit_conversion', (req, res) => {
     res.render('units/conversion/index.ejs')
 })

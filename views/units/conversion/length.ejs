@@ -13,9 +13,17 @@
 <body>
     <%- include('../../nav_bar.ejs') %>
     <div id="page-title">
-        <p>Length Conversion</p> 
+        <p>Length Conversion</p>
     </div>
-    <img id="formula-img" src="">
+    <div id="formula-div">
+        <span>Conversion Rate: </span>
+        <span id="conversion-rate"></span>
+        <br>
+        <span>Multiply </span>
+        <span id="length-given"></span>
+        <span> by </span>
+        <span id="rate-given"></span>
+    </div>
     <div id="variable-inputs">
         <input type="text" placeholder="Length" id="length-input"><br>
         <select name="units" id="conversion-units-1">

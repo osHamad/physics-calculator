@@ -33,7 +33,7 @@ document.getElementById('calculate-button').addEventListener('click', ()=>{
     // check which function to use
     // given v1, a, t
     if (v1 != '' && a != '' && t != ''){
-        answer = dGivenV1AT(v1, t, a) + unit
+        answer = dGivenV1AT(v1, a, t) + unit
         image.src = 'https://equatio-api.texthelp.com/svg/%5CDelta%20d%3D%5Cvec%7Bv_1%7D%5CDelta%20t%2B%5Cfrac%7B1%7D%7B2%7D%5Cvec%7Ba%7D%5CDelta%20t%5E2'
     }
     // given v2, a, t
